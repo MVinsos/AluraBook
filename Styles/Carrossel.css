@@ -1,0 +1,145 @@
+.carrossel__titulo {
+    background-color: var(--cor-pri);
+    text-align: center;
+    color: var(--cor-ter);
+    font-weight: 700;
+    font-size: 18px;
+    padding: 1.2em 1em .8em 1em;
+    margin-bottom: .5em;
+}
+
+.swiper-slide img{
+    width: 100%;
+    margin: .5em 0;
+}
+
+.swiper-pagination {
+    position: initial;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.carrossel__banner {
+    display: flex;
+    background-color: var(--cor-pri);
+    margin: .5em 1em;
+    padding: 1em;
+    border-radius: 16px;
+    line-height: 1.5;
+    justify-content: center;
+}
+
+.carrossel__banner_esquerda {
+    padding-right: 1.5em;
+}
+
+.carrossel__banner_titulo {
+    color: var(--cor-ter);
+    font-weight: 700;
+}
+
+.carrossel__banner_subtitulo {
+    color: var(--cor-qua);
+    font-weight: 700;
+    font-size: 18px;
+    margin: .5em 0;
+}
+
+.carrossel__banner_texto {
+    font-size: 14px;
+    margin-bottom: 1em;
+    width: 85%;
+}
+
+.carrossel__banner_icones {
+    width: 22%;
+    margin-left: .4em;
+}
+
+.carrossel__banner_icones2 {
+    margin-top: 1.2em;
+}
+
+.carrossel__banner_direita {
+    display: flex;
+    flex-direction: column;
+}
+
+.carrossel__banner_img {
+    margin-bottom: 2em;
+}
+
+.carrossel__banner_saiba {
+    background-color: var(--cor-ter);
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--cor-pri);
+    padding: .65em 2em;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__banner {
+        width: 50%;
+        margin: 2em auto;
+     }
+
+    .carrossel__titulo {
+        font-size: 26px;
+        padding-top: 2em;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+     }
+     .swiper {
+        width: 55%;
+     }
+
+     .carrossel__banner_icones {
+        width: 10%;
+        margin-top: 5em;
+     }
+
+     .carrossel__banner_icones2 {
+        margin-top: 2em;
+     }
+
+
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__titulo {
+        font-size: 32px;
+        padding-top: 1.8em;
+    }
+    
+    .swiper__pai {
+        display: flex;
+        align-items: center;
+        padding: 5em;
+    }
+
+    .swiper {
+        width: 37%;
+    }
+
+    .carrossel__banner {
+        line-height: 1.5;
+        width: 40%;
+        margin-left: 2em;
+    }
+
+    .carrossel__banner_titulo {
+        font-size: 32px;
+    }
+    
+    .carrossel__banner_texto {
+        font-size: 16px;
+    }
+
+    .carrossel__banner_icones {
+        margin: .2em;
+    }
+}

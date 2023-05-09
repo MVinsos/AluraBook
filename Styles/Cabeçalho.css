@@ -1,0 +1,145 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor-pri);
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__menu-hamburger {
+    width: 24px;
+    height: 24px;
+    background-image: url("../IMG/Menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__botao:checked ~ .lista__menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.lista__menu {
+    background-color: var(--cor-pri);
+    display: none;
+}
+
+.lista__menu_titulo {
+    color: var(--cor-ter);
+    font-weight: 700;
+    margin: 2em 1.5em;
+}
+
+.lista__menu_item {
+    background: var(--cor-grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 2em 1.5em;
+}
+
+.cabecalho__img-icones {
+    margin: .5em;
+}
+
+.opcoes, .cabecalho__titulo {
+    display: none;
+}
+
+.container__texto {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        padding: 0 2.5em;
+    }
+
+    .cabecalho__img-alura {
+        margin-right: 1em;
+    }
+
+    .cabecalho__img-icones {
+        margin: .5em 1em;
+    }
+    
+    .opcoes {
+        display: flex;
+        align-items: center;
+    }
+
+    .cabecalho__menu-hamburger, .favoritos {
+        display: none;
+    }
+
+    .cabecalho__titulo {
+        display: block;
+        font-family: var(--fonte-sec);
+        font-size: 30px;
+    }
+
+    .cabecalho__titulo-negrito {
+        font-weight: 700;
+    }
+
+    .opcoes__menu {
+        display: none;
+    }
+
+    .opcoes__menu:checked ~ .lista__menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        width: auto;
+    }
+
+    .opcoes__item {
+        text-transform: uppercase;
+        padding: 0 1.5em;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--cor-sen);
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .cabecalho {
+        padding: .7em 5em;
+    }
+
+    .opcoes__div {
+        margin-right: auto;
+        margin-left: 3em;
+    }
+
+    .container__ancora {
+        display: flex;
+        align-items: center;
+        color: var(--cor-sen);
+    }
+
+    .cabecalho__img-icones {
+        margin: .5em 0 .5em 3em;
+    }
+    
+    
+    .container__texto {
+        display: block;
+        font-size: 20px;
+    }
+}

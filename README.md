@@ -1,5 +1,5 @@
 # AluraBook
-Projeto feito no curso de HTML e CSS da alura.
+Projeto feito em conjuto com o curso de HTML e CSS da alura.
 
 Este é meu segundo projeto dentro do curso, foi realizado usando somente HTML e CSS.
 Tem um sistema de carrossel que foi importado atravez do Swiperjs.
